@@ -1,0 +1,23 @@
+Instruções para configuração do software:
+
+Junto com a pasta de instalação do software você recebe o banco de dados da aplicação : DB_PROVAS_VS1.accdb
+é neste banco ,em ACESS, que estão todas as informações necessárias para execução do software.
+Você deve indicar ao sistema o local desse banco de dados. Isso é feito da seguinte maneira:
+
+1. Abra o arquivo "BD_QUESTOES_MARINHA.exe.config" utilizando algum editor de texto, como o bloco de notas
+
+2. Nas últimas linhas desse arquivo, na seção <ConnectionStrings> você encontra a Informação "DataSource"
+que indica o local em que se encontra o banco de dados. Ao acabar de instalar, por padrão, vem o seguinte
+nome:
+
+"C:\Users\Matheus\Documents\Concursos\Marinha\BANCO\DB_PROVAS_VS1.accdb"
+
+Você deve alterar este nome com o local onde o banco de dados se encontra em seu computador.
+
+Exemplo: se o seu banco de dados está em uma pasta chamada DADOS em C:, então você deverá alterar para
+"C:\DADOS\DB_PROVAS_VS1.accdb"
+
+3. Ao salvar, é bem provável que o computador o forçará para salvar como uma cópia. Neste caso, basta apenas
+substituir o arquivo original (BD_QUESTOES_MARINHA.exe.config) pelo seu arquivo atualizado. 
+
+4. Abra o software e o execute normalmente. 

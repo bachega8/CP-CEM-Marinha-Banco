@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CE8508F-EC27-494F-BE86-811102F1D8E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BD_QUESTOES_MARINHA.My.MyApplication</StartupObject>
+    <RootNamespace>BD_QUESTOES_MARINHA</RootNamespace>
+    <AssemblyName>BD_QUESTOES_MARINHA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BD_QUESTOES_MARINHA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BD_QUESTOES_MARINHA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>captain.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\..\Desktop\L&amp;M SISTEMAS\Restaurante2\DLLs\classes_proj_rest2\RestlibRelatorios\RestlibRelatorios\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\..\..\..\..\Desktop\L&amp;M SISTEMAS\Restaurante2\DLLs\classes_proj_rest2\RestlibRelatorios\RestlibRelatorios\bin\Debug\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>..\..\..\..\..\..\Desktop\L&amp;M SISTEMAS\Restaurante2\DLLs\classes_proj_rest2\RestlibRelatorios\RestlibRelatorios\bin\Debug\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_assunto_form.Designer.vb">
+      <DependentUpon>add_assunto_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_assunto_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_questao_form.Designer.vb">
+      <DependentUpon>add_questao_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_questao_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_tema_form.Designer.vb">
+      <DependentUpon>add_tema_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_tema_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajuda_form.Designer.vb">
+      <DependentUpon>ajuda_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ajuda_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assunto_form.Designer.vb">
+      <DependentUpon>Assunto_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assunto_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\ItemProva.vb" />
+    <Compile Include="classes\Prova.vb" />
+    <Compile Include="funcoes.vb" />
+    <Compile Include="Gabarito_Imagem_form.Designer.vb">
+      <DependentUpon>Gabarito_Imagem_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gabarito_Imagem_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ger_Prova_form.Designer.vb">
+      <DependentUpon>Ger_Prova_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ger_Prova_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemProva_form.Designer.vb">
+      <DependentUpon>ItemProva_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemProva_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainform.Designer.vb">
+      <DependentUpon>mainform.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Serializador.vb" />
+    <Compile Include="TestVIEW.designer.vb">
+      <DependentUpon>TestVIEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestVIEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="add_assunto_form.resx">
+      <DependentUpon>add_assunto_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_questao_form.resx">
+      <DependentUpon>add_questao_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_tema_form.resx">
+      <DependentUpon>add_tema_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajuda_form.resx">
+      <DependentUpon>ajuda_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assunto_form.resx">
+      <DependentUpon>Assunto_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gabarito_Imagem_form.resx">
+      <DependentUpon>Gabarito_Imagem_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ger_Prova_form.resx">
+      <DependentUpon>Ger_Prova_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemProva_form.resx">
+      <DependentUpon>ItemProva_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainform.resx">
+      <DependentUpon>mainform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestVIEW.resx">
+      <DependentUpon>TestVIEW.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="captain.ico" />
+    <Content Include="Marinha-do-Brasil.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
