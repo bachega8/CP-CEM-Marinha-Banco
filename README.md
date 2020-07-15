@@ -5,6 +5,38 @@ Banco de dados criado em ACESS e sistema de gerenciamento das questões em VB.ne
 dos estudos para o concurso público. O sistema é capaz também de gerar provas em PDF de forma randômica com
 base na quantidade e tipos de questões que o usuário escolher.
 
+## Instalação
+
+Baixe os arquivos de instalção e o banco em ACESS contidos no link:
+https://github.com/bachega8/CP-CEM-Marinha-Banco/releases/tag/v1.1.0
+
+Siga as seguintes instruções após a instalação para a correta ligação do sistema com o banco de dados:
+```
+Junto com a pasta de instalação do software você recebe o banco de dados da aplicação : DB_PROVAS_VS1.accdb
+é neste banco ,em ACESS, que estão todas as informações necessárias para execução do software.
+Você deve indicar ao sistema o local desse banco de dados. Isso é feito da seguinte maneira:
+
+1. Abra o arquivo "BD_QUESTOES_MARINHA.exe.config" utilizando algum editor de texto, como o bloco de notas
+
+2. Nas últimas linhas desse arquivo, na seção <ConnectionStrings> você encontra a Informação "DataSource"
+que indica o local em que se encontra o banco de dados. Ao acabar de instalar, por padrão, vem o seguinte
+nome:
+
+"C:\Users\Matheus\Documents\Concursos\Marinha\BANCO\DB_PROVAS_VS1.accdb"
+
+Você deve alterar este nome com o local onde o banco de dados se encontra em seu computador.
+
+Exemplo: se o seu banco de dados está em uma pasta chamada DADOS em C:, então você deverá alterar para
+"C:\DADOS\DB_PROVAS_VS1.accdb"
+
+3. Ao salvar, é bem provável que o computador o forçará para salvar como uma cópia. Neste caso, basta apenas
+substituir o arquivo original (BD_QUESTOES_MARINHA.exe.config) pelo seu arquivo atualizado. 
+
+4. Abra o software e o execute normalmente. 
+
+```
+
+
 ## Tela Principal
 ![telaPrincipal](https://user-images.githubusercontent.com/50142743/87493246-be2c8d80-c622-11ea-95de-44d8a6864395.png)
 
