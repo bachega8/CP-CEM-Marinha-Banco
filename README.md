@@ -5,3 +5,5 @@ Banco de dados criado em ACESS e sistema de gerenciamento das questões em VB.ne
 dos estudos para o concurso público. O sistema é capaz também de gerar provas em PDF de forma randômica com
 base na quantidade e tipos de questões que o usuário escolher.
 
+![alt text](https://github.com/bachega8/CP-CEM-Marinha-Banco/edit/master/telaPrincipal.png?raw=true "title")
+
